@@ -22,9 +22,9 @@ public class Character {
 
     public void  swingSword(){
 
-            this.stamina = this.stamina - 10;
+            
         if (this.stamina >= 0){
-
+            this.stamina = this.stamina - 10;
             System.out.println("Character swings sword. Stamina is now " + getStamina() +".");
         }else {
             System.out.println("Your character needs to cool down.");
@@ -38,6 +38,7 @@ public class Character {
 
             System.out.println("Character takes " + damage +" damage. Health is now " + getHealth() +".");
         }else{
+            this.health = 0;
             System.out.println("Character takes " + damage +" damage. Health is now " + getHealth() +".");
             System.out.println("Character is dead.");
         }
