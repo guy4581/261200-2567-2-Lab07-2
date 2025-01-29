@@ -23,7 +23,7 @@ public class Character {
     public void  swingSword(){
 
             
-        if (this.stamina - 10 >= 0){
+        if (this.stamina - 10 > 0){
             this.stamina = this.stamina - 10;
             System.out.println("Character swings sword. Stamina is now " + getStamina() +".");
         }else {
